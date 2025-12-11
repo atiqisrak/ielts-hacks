@@ -1,0 +1,100 @@
+{
+    "strategies": [
+        {
+            "id": "1",
+            "title": "Skimming and Scanning Techniques",
+            "content": "Master the art of skimming and scanning to quickly find information in reading passages. Skim for main ideas, scan for specific details. Practice timing yourself to improve speed without sacrificing accuracy.",
+            "section": "reading",
+            "bandLevel": "9",
+            "tags": [
+                "reading",
+                "techniques",
+                "speed"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Task Response in Writing Task 2",
+            "content": "Always address all parts of the question completely. Plan your essay structure before writing: introduction, body paragraphs (2-3), and conclusion. Use clear topic sentences and support with relevant examples.",
+            "section": "writing",
+            "bandLevel": "9",
+            "tags": [
+                "writing",
+                "task-2",
+                "essay"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Note-Taking for Listening",
+            "content": "Develop a personal shorthand system for taking notes during listening tests. Focus on keywords, numbers, dates, and names. Don't try to write everything - prioritize important information.",
+            "section": "listening",
+            "bandLevel": "8",
+            "tags": [
+                "listening",
+                "notes",
+                "techniques"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Fluency and Coherence in Speaking",
+            "content": "Speak naturally and confidently. Use linking words to connect ideas smoothly. Don't memorize answers - be authentic. Practice speaking about various topics to build confidence.",
+            "section": "speaking",
+            "bandLevel": "9",
+            "tags": [
+                "speaking",
+                "fluency",
+                "coherence"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Time Management in Reading",
+            "content": "Allocate 20 minutes per passage. Spend 2-3 minutes reading the passage, then answer questions. If stuck on a question, move on and return later. Never leave questions blank.",
+            "section": "reading",
+            "bandLevel": "8",
+            "tags": [
+                "reading",
+                "time-management",
+                "tips"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Lexical Resource for Writing",
+            "content": "Use a wide range of vocabulary naturally. Avoid repetition - use synonyms. Show awareness of collocations and word forms. Don't use overly complex words incorrectly.",
+            "section": "writing",
+            "bandLevel": "9",
+            "tags": [
+                "writing",
+                "vocabulary",
+                "lexical"
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Predicting Answers in Listening",
+            "content": "Use the time before each section to read questions and predict possible answers. Listen for synonyms and paraphrases. Pay attention to signposting words that indicate answers.",
+            "section": "listening",
+            "bandLevel": "9",
+            "tags": [
+                "listening",
+                "prediction",
+                "techniques"
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Pronunciation and Intonation",
+            "content": "Work on clear pronunciation of individual sounds and word stress. Use intonation to express meaning and emotion. Record yourself speaking and identify areas for improvement.",
+            "section": "speaking",
+            "bandLevel": "8",
+            "tags": [
+                "speaking",
+                "pronunciation",
+                "intonation"
+            ]
+        }
+    ]
+}
