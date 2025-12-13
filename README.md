@@ -3,7 +3,7 @@
 <div align="center">
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Node.js](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen.svg)
+![Node.js](https://img.shields.io/badge/node-%3E%3D20.9-brightgreen.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![GitHub stars](https://img.shields.io/github/stars/atiqisrak/ielts-hacks?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/atiqisrak/ielts-hacks?style=social)
@@ -24,51 +24,50 @@ IELTS Hacks is a comprehensive platform designed to help students achieve Band 9
 
 - 📚 **Comprehensive Study Materials** - Access to curated books, guides, and resources
 - 🎯 **Band 9 Strategies** - Proven techniques and tips from experts
-- 📝 **Practice Tests** - Realistic IELTS practice exams with detailed feedback
-- 📊 **Progress Tracking** - Monitor your improvement over time
-- 💡 **Expert Assistance** - Get help from experienced IELTS instructors
+- 📝 **Practice Papers** - Downloadable practice test papers
 - 📱 **Mobile Responsive** - Study on any device, anywhere
-- 🌐 **Multi-format Support** - Resources available in various formats
+- 🌐 **Multi-format Support** - Resources available in various formats (PDF, DOC, ZIP)
+- 🔗 **Cloud Storage Integration** - Direct download links from cloud storage
 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                        IELTS Hacks                          │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
-│  │   Frontend   │  │   Backend    │  │   Database   │      │
-│  │              │  │              │  │              │      │
-│  │  • React     │◄─┤  • Node.js   │◄─┤  • MongoDB   │      │
-│  │  • HTML/CSS  │  │  • Express   │  │  • Redis     │      │
-│  │  • JS        │  │  • REST API  │  │              │      │
-│  └──────────────┘  └──────────────┘  └──────────────┘      │
-│         │                  │                  │             │
-│         └──────────────────┼──────────────────┘             │
-│                            │                                │
-│                   ┌────────▼────────┐                       │
-│                   │  Study Materials │                       │
-│                   │  & Resources API │                       │
-│                   └─────────────────┘                        │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────┐
+│         IELTS Hacks Platform            │
+├─────────────────────────────────────────┤
+│                                         │
+│  ┌──────────────┐  ┌──────────────┐   │
+│  │   Next.js    │  │   Cloud      │   │
+│  │   Frontend   │  │   Storage    │   │
+│  │              │  │              │   │
+│  │  • Pages     │  │  • Files     │   │
+│  │  • Components│  │  • Links     │   │
+│  │  • API Routes│  │              │   │
+│  └──────┬───────┘  └──────┬───────┘   │
+│         │                  │            │
+│         └────────┬─────────┘            │
+│                  │                       │
+│         ┌────────▼────────┐             │
+│         │  Static Content │             │
+│         │  & File Links   │             │
+│         └─────────────────┘             │
+│                                         │
+└─────────────────────────────────────────┘
 ```
 
 ### Technology Stack
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB, Redis
-- **Deployment**: Docker, CI/CD
-- **Testing**: Jest, Mocha
+- **Frontend**: Next.js 16, React 19, TypeScript
+- **Styling**: Tailwind CSS
+- **File Storage**: Cloud Storage (AWS S3, Google Drive, Dropbox, etc.)
+- **Deployment**: Vercel, Netlify, or any static hosting
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v14.0.0 or higher)
-- npm or pnpm package manager
+- Node.js (v20.9 or higher)
+- pnpm package manager
 - Git
 
 ### Installation
@@ -86,31 +85,76 @@ IELTS Hacks is a comprehensive platform designed to help students achieve Band 9
    pnpm install
    ```
 
-3. **Run the application**
+3. **Run the development server**
 
    ```bash
-   node index.js
+   pnpm dev
    ```
 
 4. **Open your browser**
    ```
-   http://localhost:3000
+   http://localhost:3999
    ```
 
 ## 📁 Project Structure
 
 ```
 ielts-hacks/
-├── index.js              # Main entry point
-├── README.md             # Project documentation
-├── package.json          # Dependencies and scripts
-├── .gitignore           # Git ignore rules
-└── docs/                # Additional documentation
+├── app/                    # Next.js app directory
+│   ├── api/               # API routes for materials and strategies
+│   ├── materials/         # Study materials pages
+│   ├── strategies/        # Strategy pages
+│   ├── resources/         # Resources page
+│   ├── about/             # About page
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── Navigation.tsx     # Navigation bar
+│   ├── Footer.tsx         # Site footer
+│   ├── MaterialCard.tsx  # Material display card
+│   ├── StrategyCard.tsx   # Strategy display card
+│   └── ...
+├── data/                  # JSON data files
+│   ├── materials.json     # Materials data
+│   └── strategies.json    # Strategies data
+├── public/                # Static assets
+├── README.md              # Project documentation
+├── package.json           # Dependencies and scripts
+└── tailwind.config.ts     # Tailwind configuration
 ```
 
 ## 🎓 Usage
 
-Once the server is running, navigate to `http://localhost:3000` in your browser to see the IELTS Hacks welcome page.
+Once the development server is running, navigate to `http://localhost:3999` in your browser to see the IELTS Hacks platform.
+
+### Key Pages
+
+- **Home** (`/`) - Landing page with feature overview
+- **Study Materials** (`/materials`) - Browse all study materials
+  - Books (`/materials/books`)
+  - Guides (`/materials/guides`)
+  - Practice Papers (`/materials/practice-papers`)
+- **Strategies** (`/strategies`) - Band 9 strategies
+  - Reading (`/strategies/reading`)
+  - Writing (`/strategies/writing`)
+  - Listening (`/strategies/listening`)
+  - Speaking (`/strategies/speaking`)
+- **Resources** (`/resources`) - Additional learning resources
+- **About** (`/about`) - Platform information
+
+## 🔧 Configuration
+
+### Cloud Storage Setup
+
+Update the `cloudUrl` field in `data/materials.json` with your actual cloud storage file links (AWS S3, Google Drive, Dropbox, etc.).
+
+### Environment Variables
+
+Create a `.env.local` file for environment-specific configuration:
+
+```env
+NEXT_PUBLIC_BASE_URL=http://localhost:3999
+```
 
 ## 🤝 Contributing
 

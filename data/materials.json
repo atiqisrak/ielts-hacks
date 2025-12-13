@@ -1,0 +1,93 @@
+{
+    "materials": [
+        {
+            "id": "1",
+            "title": "Cambridge IELTS 18 Academic",
+            "description": "Official Cambridge IELTS practice test book with authentic exam papers and answer keys.",
+            "category": "book",
+            "format": "pdf",
+            "cloudUrl": "https://example.com/files/cambridge-ielts-18-academic.pdf",
+            "size": "45 MB",
+            "tags": [
+                "academic",
+                "practice-tests",
+                "official"
+            ],
+            "createdAt": "2024-01-15"
+        },
+        {
+            "id": "2",
+            "title": "IELTS Band 9 Writing Guide",
+            "description": "Comprehensive guide to achieving Band 9 in IELTS Writing with sample essays and strategies.",
+            "category": "guide",
+            "format": "pdf",
+            "cloudUrl": "https://example.com/files/ielts-band9-writing-guide.pdf",
+            "size": "12 MB",
+            "tags": [
+                "writing",
+                "band-9",
+                "essays"
+            ],
+            "createdAt": "2024-01-20"
+        },
+        {
+            "id": "3",
+            "title": "IELTS Practice Test Set 1",
+            "description": "Full-length practice test covering all four sections: Reading, Writing, Listening, and Speaking.",
+            "category": "practice-paper",
+            "format": "pdf",
+            "cloudUrl": "https://example.com/files/ielts-practice-test-1.pdf",
+            "size": "8 MB",
+            "tags": [
+                "practice-test",
+                "full-test"
+            ],
+            "createdAt": "2024-01-25"
+        },
+        {
+            "id": "4",
+            "title": "IELTS Vocabulary Builder",
+            "description": "Essential vocabulary lists organized by topics for IELTS preparation.",
+            "category": "guide",
+            "format": "pdf",
+            "cloudUrl": "https://example.com/files/ielts-vocabulary-builder.pdf",
+            "size": "5 MB",
+            "tags": [
+                "vocabulary",
+                "words",
+                "topics"
+            ],
+            "createdAt": "2024-02-01"
+        },
+        {
+            "id": "5",
+            "title": "Cambridge IELTS 17 General Training",
+            "description": "Official Cambridge IELTS practice test book for General Training module.",
+            "category": "book",
+            "format": "pdf",
+            "cloudUrl": "https://example.com/files/cambridge-ielts-17-gt.pdf",
+            "size": "42 MB",
+            "tags": [
+                "general-training",
+                "practice-tests",
+                "official"
+            ],
+            "createdAt": "2024-02-05"
+        },
+        {
+            "id": "6",
+            "title": "IELTS Speaking Practice Questions",
+            "description": "Collection of common IELTS speaking questions with sample answers and tips.",
+            "category": "guide",
+            "format": "pdf",
+            "cloudUrl": "https://example.com/files/ielts-speaking-questions.pdf",
+            "size": "3 MB",
+            "tags": [
+                "speaking",
+                "questions",
+                "answers"
+            ],
+            "createdAt": "2024-02-10"
+        }
+    ]
+}
