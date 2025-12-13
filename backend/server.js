@@ -14,8 +14,20 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3986;
 
-// Enable CORS
-app.use(cors());
+// Enable CORS with explicit origin configuration
+const corsOptions = {
+  origin: [
+    "https://ielts-hacks.vercel.app",
+    "http://localhost:3999",
+    "http://localhost:3000",
+    process.env.FRONTEND_URL,
+  ].filter(Boolean),
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Create uploads directory if it doesn't exist
